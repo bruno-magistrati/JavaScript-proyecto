@@ -74,4 +74,4 @@ while (seleccion != "no") {
 
 const total = carrito.reduce((acc, el) => acc + el.precio * el.unidades, 0)
 alert(`el total a pagar por su compra es; ${total}`)
-alert("Gracias por elejirnos, hasta luego")
+alert("Gracias por elegirnos, hasta luego")
