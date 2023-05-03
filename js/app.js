@@ -14,17 +14,18 @@ while (seleccion != "si" && seleccion != "no") {
     seleccion = prompt("Desea comprar una bebida si/no");
 }
 if (seleccion == "si") {
-    alert("Esta es nuestra lista de bebidas, selecione una o mas");
     let listaProductos = productos.map(
         (productos) => productos.nombre + " " + productos.precio + "$"
     );
-    alert(listaProductos.join(" - "));
+    alert( listaProductos.join(" - "));
 } else if (seleccion == "no") {
     alert("Gracias por su visita, hasta luego");
 }
 
 while (seleccion != "no") {
+
     let producto = prompt("Agrega un producto a tu carrito");
+    alert( listaProductos.join(" - "));
     let precio = 0;
 
     if (
@@ -66,7 +67,7 @@ while (seleccion != "no") {
 
     while(seleccion == "no"){
         carrito.forEach((carritoFinal) =>{
-           alert(`producto: ${carritoFinal.producto}, unidades: ${carritoFinal.unidades} precio ${carritoFinal.precio}`)
+        alert(`producto: ${carritoFinal.producto}, unidades: ${carritoFinal.unidades} precio ${carritoFinal.precio}`)
         })
         break;
     }
